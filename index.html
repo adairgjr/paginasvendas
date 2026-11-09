@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Diagnóstico de Redação para Concursos</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F3F5F8}
+a{color:#0E2A47}a:hover{color:#081a2e}
+details summary{list-style:none;cursor:pointer}
+details summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+</style>
+</helmet>
+
+<div style="width: 100%; font-family: Inter, system-ui, sans-serif; color: #142235; background: #F3F5F8; font-size: 17px; line-height: 1.6">
+
+  <!-- TOPO -->
+  <header style="background: #0E2A47; border-bottom: 1px solid #1d3b5c">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between">
+      <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 18px; color: #FFFFFF; letter-spacing: 0.2px">Texto &amp; Contexto <span style="font-weight: 600; color: #C5D2E0">· Redação para Concursos</span></div>
+      <a href="#oferta" style="font-size: 15px; font-weight: 600; color: #0E2A47; background: {{accent}}; padding: 10px 18px; border-radius: 8px; text-decoration: none; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Garantir meu diagnóstico</a>
+    </div>
+  </header>
+
+  <!-- HERO / QUADRO -->
+  <section style="background: #0E2A47; color: #FFFFFF">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 88px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+      <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        <div style="display: inline-flex; align-self: flex-start; gap: 8px; align-items: center; font-size: 14px; font-weight: 600; color: #FBE3B5; border: 1px solid #3a5878; padding: 6px 14px; border-radius: 999px">Para quem vai prestar Cebraspe, Vunesp, Cesgranrio ou Idecan</div>
+        <h1 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(34px, 4.4vw, 54px); line-height: 1.12; letter-spacing: -0.5px">Descubra quanto a sua redação vale hoje na régua da sua banca — e o que corrigir primeiro para não ser eliminado na discursiva.</h1>
+        <p style="margin: 0; font-size: 19px; color: #C5D2E0; max-width: 620px">Você envia uma redação. Em até 48 horas recebe a nota pelos critérios da banca que escolheu, cada desconto explicado e o ajuste que mais rende pontos na próxima. Correção individual da Profª Marcela, com devolutiva em áudio.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center">
+          <a href="#oferta" style="font-size: 18px; font-weight: 700; color: #0E2A47; background: {{accent}}; padding: 16px 28px; border-radius: 10px; text-decoration: none; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Quero meu diagnóstico</a>
+          <span style="font-size: 15px; color: #C5D2E0">Pagamento único · Garantia de 7 dias · Voucher válido por 45 dias</span>
+        </div>
+      </div>
+
+      <!-- Exemplo de devolutiva -->
+      <div style="flex: 1 1 360px; min-width: 0; background: #FFFFFF; color: #142235; border-radius: 16px; padding: 28px; box-shadow: 0 24px 60px rgba(0,0,0,0.28); display: flex; flex-direction: column; gap: 18px">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 18px">Seu diagnóstico</div>
+          <div style="font-size: 13px; font-weight: 600; background: #E8EEF5; color: #0E2A47; padding: 4px 10px; border-radius: 6px">Banca: Cebraspe</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; justify-content: space-between; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid #E3E8EF"><span style="font-size: 15px">Estrutura do texto</span><span style="font-size: 14px; font-weight: 600; color: #1F6B45">Consistente</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid #E3E8EF"><span style="font-size: 15px">Desenvolvimento do tema</span><span style="font-size: 14px; font-weight: 600; color: #8A5A00">Atenção</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid #E3E8EF"><span style="font-size: 15px">Norma-padrão (erros por linha)</span><span style="font-size: 14px; font-weight: 700; color: #A12C2C">Ponto de travamento</span></div>
+        </div>
+        <div style="background: #FBF1DF; border-radius: 10px; padding: 16px">
+          <div style="font-size: 13px; font-weight: 700; color: #6B4600; text-transform: uppercase; letter-spacing: 0.6px">Ajuste prioritário</div>
+          <div style="font-size: 15px; margin-top: 4px">Revisar concordância e pontuação nos períodos longos antes de qualquer outra mudança: é onde a sua nota está sendo descontada.</div>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center; font-size: 14px; color: #4A5A6E">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E2A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><path d="M12 19v3"></path></svg>
+          + devolutiva em áudio da professora no WhatsApp
+        </div>
+        <div style="font-size: 12px; color: #5A6878">Ilustração. A sua devolutiva é feita sobre o seu texto.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOR -->
+  <section>
+    <div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+      <div style="max-width: 760px; display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.2; color: #0E2A47">Você estudou meses para a objetiva. Não deixe a discursiva decidir sozinha.</h2>
+        <p style="margin: 0; color: #4A5A6E">Em muitos editais a redação é eliminatória: acertar a prova objetiva não adianta se o texto não alcança a nota mínima. E quase ninguém sabe, antes da prova, quanto o próprio texto vale.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 700; font-size: 19px; color: #0E2A47">Cada banca tem uma régua</div>
+          <div style="font-size: 16px; color: #4A5A6E">O que derruba sua nota numa banca pode pesar menos em outra. Treinar sem saber os critérios da sua é escrever no escuro.</div>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 700; font-size: 19px; color: #0E2A47">Seu tempo é curto</div>
+          <div style="font-size: 16px; color: #4A5A6E">Entre trabalho, família e o conteúdo da objetiva, não sobra espaço para escrever vinte redações às cegas e torcer para melhorar.</div>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 700; font-size: 19px; color: #0E2A47">Correção genérica não orienta</div>
+          <div style="font-size: 16px; color: #4A5A6E">"Nota 6, melhore a coesão" não diz onde, por que nem o que fazer primeiro. Você precisa de diagnóstico, não de carimbo.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FURADEIRA / MÉTODO -->
+  <section style="background: #FFFFFF">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 44px">
+      <div style="max-width: 760px; display: flex; flex-direction: column; gap: 14px">
+        <div style="font-size: 14px; font-weight: 700; color: #6B4600; text-transform: uppercase; letter-spacing: 1px">Método Ápice · Régua da Banca</div>
+        <h2 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.2; color: #0E2A47">Como o diagnóstico chega à sua nota — em 4 etapas</h2>
+        <p style="margin: 0; color: #4A5A6E">Não é uma correção comum com nota no rodapé. É um método que mede seu texto com a régua da banca que você escolheu e termina dizendo exatamente o que mudar primeiro.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+        <div style="border: 1px solid #DCE3EC; border-radius: 14px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 34px; color: #C98A1B">01</div>
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 700; font-size: 21px; color: #0E2A47">Calibrar</div>
+          <div style="font-size: 16px; color: #4A5A6E">Você escolhe a banca do seu edital. A correção passa a usar os critérios e a forma de pontuar dela, não uma régua genérica.</div>
+        </div>
+        <div style="border: 1px solid #DCE3EC; border-radius: 14px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 34px; color: #C98A1B">02</div>
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 700; font-size: 21px; color: #0E2A47">Medir</div>
+          <div style="font-size: 16px; color: #4A5A6E">Nota por critério, com cada desconto justificado e o texto comentado trecho a trecho. Você vê onde perdeu e por quê.</div>
+        </div>
+        <div style="border: 1px solid #DCE3EC; border-radius: 14px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 34px; color: #C98A1B">03</div>
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 700; font-size: 21px; color: #0E2A47">Localizar</div>
+          <div style="font-size: 16px; color: #4A5A6E">Identificamos sua faixa de desempenho e o ponto de travamento: o fator que, sozinho, mais segura sua nota hoje.</div>
+        </div>
+        <div style="border: 1px solid #DCE3EC; border-radius: 14px; padding: 26px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 34px; color: #C98A1B">04</div>
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 700; font-size: 21px; color: #0E2A47">Priorizar</div>
+          <div style="font-size: 16px; color: #4A5A6E">Plano de evolução com o ajuste prioritário para a próxima redação. Uma correção de cada vez, na ordem que mais rende.</div>
+        </div>
+      </div>
+
+      <!-- Eficiência -->
+      <div style="background: #0E2A47; color: #FFFFFF; border-radius: 18px; padding: 40px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+        <div style="flex: 1 1 280px; min-width: 0">
+          <h3 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 26px; line-height: 1.25">Por que é mais eficiente do que simplesmente escrever mais?</h3>
+        </div>
+        <div style="flex: 2 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px">
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <div style="font-weight: 700; font-size: 18px; color: #FBE3B5">Menos tempo</div>
+            <div style="font-size: 16px; color: #C5D2E0">Suas poucas horas livres vão para o ajuste que mais rende, não para repetir os mesmos erros.</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <div style="font-weight: 700; font-size: 18px; color: #FBE3B5">Menos dinheiro</div>
+            <div style="font-size: 16px; color: #C5D2E0">Um texto bem diagnosticado orienta mais do que um pacote de correções que só devolvem nota.</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <div style="font-weight: 700; font-size: 18px; color: #FBE3B5">Mais segurança</div>
+            <div style="font-size: 16px; color: #C5D2E0">Você sabe onde está antes da prova, e não depois do resultado.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANCAS -->
+  <section>
+    <div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+      <div style="max-width: 760px; display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.2; color: #0E2A47">Corrigido pela régua da sua banca</h2>
+        <p style="margin: 0; color: #4A5A6E">Cada voucher dá direito a um diagnóstico em uma banca, à sua escolha. Escolha a do concurso que você vai prestar.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 28px 20px; text-align: center; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 24px; color: #0E2A47">Cebraspe</div>
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 28px 20px; text-align: center; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 24px; color: #0E2A47">Vunesp</div>
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 28px 20px; text-align: center; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 24px; color: #0E2A47">Cesgranrio</div>
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 28px 20px; text-align: center; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 24px; color: #0E2A47">Idecan</div>
+      </div>
+      <p style="margin: 0; font-size: 16px; color: #4A5A6E">Seu concurso é de outra banca? <a href="https://wa.me/5514982216454" style="font-weight: 600">Fale com a gente no WhatsApp</a> antes de comprar.</p>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ RECEBE -->
+  <section style="background: #FFFFFF">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+      <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.2; color: #0E2A47">O que você recebe</h2>
+        <p style="margin: 0; color: #4A5A6E">Tudo feito sobre o seu texto, pela própria professora. Nada de correção automática.</p>
+      </div>
+      <div style="flex: 2 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; gap: 14px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><div><strong>Nota pelos critérios da banca escolhida</strong> — Cebraspe, Vunesp, Cesgranrio ou Idecan.</div></div>
+        <div style="display: flex; gap: 14px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><div><strong>Diagnóstico por critério</strong>, com a justificativa de cada desconto.</div></div>
+        <div style="display: flex; gap: 14px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><div><strong>Análise comentada trecho a trecho</strong> do seu texto.</div></div>
+        <div style="display: flex; gap: 14px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><div><strong>Faixa de desempenho e ponto de travamento</strong>: onde você está e o que mais segura sua nota.</div></div>
+        <div style="display: flex; gap: 14px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><div><strong>Plano de evolução</strong> com o ajuste prioritário para a próxima redação.</div></div>
+        <div style="display: flex; gap: 14px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><div><strong>Relatório descritivo</strong> de melhorias para guardar e revisar.</div></div>
+        <div style="display: flex; gap: 14px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><div><strong>Devolutiva em áudio</strong> da professora, enviada pelo WhatsApp: dá para ouvir no trânsito ou no intervalo do trabalho.</div></div>
+        <div style="margin-top: 10px; background: #FBF1DF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+          <div style="font-size: 13px; font-weight: 700; color: #6B4600; text-transform: uppercase; letter-spacing: 0.6px">Bônus</div>
+          <div style="font-size: 16px">Tira-dúvidas com a professora sobre a sua devolutiva + checklist de revisão final para usar nos últimos minutos da prova discursiva.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DECORADO -->
+  <section>
+    <div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 36px">
+      <h2 style="margin: 0; max-width: 760px; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.2; color: #0E2A47">O que muda quando você sabe exatamente onde está</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px">
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; font-size: 17px">Você chega no dia da prova sabendo o que o seu texto entrega e o que precisa evitar.</div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; font-size: 17px">Para de gastar fins de semana escrevendo redações sem direção.</div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; font-size: 17px">Usa o pouco tempo livre no ajuste que mais rende pontos.</div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; font-size: 17px">Protege meses de estudo da objetiva de uma eliminação na discursiva.</div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; font-size: 17px">Estuda com a tranquilidade de quem tem um plano, não com a ansiedade de quem torce.</div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; font-size: 17px">Fica um passo mais perto da estabilidade, do cargo e da rotina que você está buscando.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFESSORA -->
+  <section style="background: #FFFFFF">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+      <div style="flex: 1 1 300px; min-width: 0; max-width: 400px; aspect-ratio: 4 / 5; background: #E8EEF5; border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #4A5A6E; font-size: 15px; text-align: center; padding: 24px; box-sizing: border-box">[Foto da Profª Marcela]</div>
+      <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+        <div style="font-size: 14px; font-weight: 700; color: #6B4600; text-transform: uppercase; letter-spacing: 1px">Quem corrige o seu texto</div>
+        <h2 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.2; color: #0E2A47">Profª Marcela</h2>
+        <p style="margin: 0; color: #4A5A6E">Há mais de 17 anos ensina e corrige redação dissertativa para o ENEM e os vestibulares mais concorridos do país. São mais de 1.100 alunos aprovados, muitos deles em Medicina, onde a redação costuma separar quem entra de quem fica.</p>
+        <div style="border-left: 0; background: #F3F5F8; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+          <div style="font-weight: 700; color: #0E2A47">Por que essa experiência serve para o seu concurso?</div>
+          <div style="font-size: 16px; color: #4A5A6E">O que as bancas avaliam numa redação é a mesma base que ela corrige há 17 anos: domínio da norma-padrão, adequação ao tema, estrutura, coesão e argumentação. O que muda de uma prova para outra é a régua — e o diagnóstico é feito com a régua da banca que você escolher.</div>
+        </div>
+        <div style="font-size: 15px; color: #4A5A6E">Transparência: este é o primeiro lote do diagnóstico voltado a concursos. Por isso o preço é de lançamento.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section>
+    <div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+      <div style="max-width: 780px; display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.2; color: #0E2A47">O rigor de correção que levou alunos a notas máximas</h2>
+        <p style="margin: 0; color: #4A5A6E">Os resultados abaixo são de alunos de ENEM e vestibulares, corrigidos pela mesma professora e com o mesmo método que você vai receber. Os primeiros relatos de concurseiros virão desta turma fundadora.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px">
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+          <div style="display: flex; justify-content: space-between; gap: 10px; align-items: center"><div style="font-weight: 700; color: #0E2A47">Beatriz Mendes</div><div style="font-size: 12px; font-weight: 700; background: #E8EEF5; color: #0E2A47; padding: 3px 8px; border-radius: 6px">ENEM</div></div>
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 22px; color: #0E2A47">De 600 para 960 na redação</div>
+          <div style="font-size: 14px; color: #5A6878">[Cole aqui o depoimento original]</div>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+          <div style="display: flex; justify-content: space-between; gap: 10px; align-items: center"><div style="font-weight: 700; color: #0E2A47">Fernando Silva</div><div style="font-size: 12px; font-weight: 700; background: #E8EEF5; color: #0E2A47; padding: 3px 8px; border-radius: 6px">ENEM</div></div>
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 22px; color: #0E2A47">980 na redação</div>
+          <div style="font-size: 14px; color: #5A6878">[Cole aqui o depoimento original]</div>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+          <div style="display: flex; justify-content: space-between; gap: 10px; align-items: center"><div style="font-weight: 700; color: #0E2A47">Maria Júlia Malaguti</div><div style="font-size: 12px; font-weight: 700; background: #E8EEF5; color: #0E2A47; padding: 3px 8px; border-radius: 6px">ENEM</div></div>
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 22px; color: #0E2A47">920 na redação</div>
+          <div style="font-size: 14px; color: #5A6878">[Cole aqui o depoimento original]</div>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+          <div style="display: flex; justify-content: space-between; gap: 10px; align-items: center"><div style="font-weight: 700; color: #0E2A47">Isabelli Claro</div><div style="font-size: 12px; font-weight: 700; background: #E8EEF5; color: #0E2A47; padding: 3px 8px; border-radius: 6px">Vestibular</div></div>
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 22px; color: #0E2A47">Nota máxima na redação da FAMEMA</div>
+          <div style="font-size: 14px; color: #5A6878">[Cole aqui o depoimento original]</div>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+          <div style="display: flex; justify-content: space-between; gap: 10px; align-items: center"><div style="font-weight: 700; color: #0E2A47">Luis Melo</div><div style="font-size: 12px; font-weight: 700; background: #E8EEF5; color: #0E2A47; padding: 3px 8px; border-radius: 6px">Vestibular</div></div>
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 22px; color: #0E2A47">Medicina na FAMEMA, nota máxima em redação</div>
+          <div style="font-size: 14px; color: #5A6878">[Cole aqui o depoimento original]</div>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+          <div style="display: flex; justify-content: space-between; gap: 10px; align-items: center"><div style="font-weight: 700; color: #0E2A47">Pedro Moço</div><div style="font-size: 12px; font-weight: 700; background: #E8EEF5; color: #0E2A47; padding: 3px 8px; border-radius: 6px">Vestibular</div></div>
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 22px; color: #0E2A47">1º lugar em Medicina na UFMS</div>
+          <div style="font-size: 14px; color: #5A6878">[Cole aqui o depoimento original]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section style="background: #FFFFFF">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 36px">
+      <h2 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.2; color: #0E2A47">Como funciona</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px">
+        <div style="display: flex; flex-direction: column; gap: 8px"><div style="width: 44px; height: 44px; border-radius: 999px; background: #0E2A47; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700">1</div><div style="font-weight: 700; color: #0E2A47">Compra</div><div style="font-size: 16px; color: #4A5A6E">Você recebe o voucher e as instruções de envio por e-mail.</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><div style="width: 44px; height: 44px; border-radius: 999px; background: #0E2A47; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700">2</div><div style="font-weight: 700; color: #0E2A47">Banca e tema</div><div style="font-size: 16px; color: #4A5A6E">Escolha a banca do seu concurso e um tema de prova anterior ou um tema sugerido por nós.</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><div style="width: 44px; height: 44px; border-radius: 999px; background: #0E2A47; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700">3</div><div style="font-weight: 700; color: #0E2A47">Envio</div><div style="font-size: 16px; color: #4A5A6E">Foto ou arquivo. Recomendamos manuscrita: é assim que você vai escrever no dia da prova.</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><div style="width: 44px; height: 44px; border-radius: 999px; background: #0E2A47; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700">4</div><div style="font-weight: 700; color: #0E2A47">Devolutiva em até 48h</div><div style="font-size: 16px; color: #4A5A6E">Relatório completo + áudio da professora no seu WhatsApp.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section id="oferta" style="background: #0E2A47; color: #FFFFFF">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+      <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+        <div style="display: inline-flex; align-self: flex-start; font-size: 14px; font-weight: 700; color: #0E2A47; background: {{accent}}; padding: 6px 14px; border-radius: 999px">Turma fundadora · preço de lançamento</div>
+        <h2 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(30px, 3.4vw, 44px); line-height: 1.15">Saiba quanto seu texto vale antes da prova, não depois do resultado.</h2>
+        <p style="margin: 0; color: #C5D2E0">Quem entra agora paga o preço de lançamento. Em troca, se quiser, nos conta como foi: são esses relatos que vão orientar os próximos concurseiros.</p>
+      </div>
+      <div style="flex: 1 1 380px; min-width: 0; background: #FFFFFF; color: #142235; border-radius: 18px; padding: 36px; display: flex; flex-direction: column; gap: 18px">
+        <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 20px; color: #0E2A47">Diagnóstico Estratégico de Redação · Concursos</div>
+        <div style="display: flex; flex-direction: column; gap: 8px; font-size: 16px">
+          <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>1 redação corrigida na banca que você escolher</div>
+          <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>Relatório completo + plano de evolução</div>
+          <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>Devolutiva em áudio no WhatsApp</div>
+          <div style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg>Bônus: tira-dúvidas + checklist de revisão final</div>
+        </div>
+        <div style="border-top: 1px solid #E3E8EF; padding-top: 18px; display: flex; flex-direction: column; gap: 2px">
+          <div style="font-size: 16px; color: #5A6878">De <span style="text-decoration: line-through">R$ 97</span> por</div>
+          <div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 56px; line-height: 1.05; color: #0E2A47">R$ 47</div>
+          <div style="font-size: 15px; color: #5A6878">Pagamento único, à vista</div>
+        </div>
+        <a href="#checkout-concurso" style="font-size: 18px; font-weight: 700; color: #0E2A47; background: {{accent}}; padding: 16px 24px; border-radius: 10px; text-decoration: none; text-align: center; min-height: 52px; box-sizing: border-box; display: flex; align-items: center; justify-content: center">Quero meu diagnóstico agora</a>
+        <div style="font-size: 14px; color: #5A6878; text-align: center">Voucher válido por 45 dias após a compra</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTIA -->
+  <section>
+    <div style="max-width: 880px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 28px; align-items: center">
+      <div style="flex: none; width: 96px; height: 96px; border-radius: 999px; border: 3px solid #0E2A47; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #0E2A47"><div style="font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 32px; line-height: 1">7</div><div style="font-size: 12px; font-weight: 700">DIAS</div></div>
+      <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+        <h3 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: 26px; color: #0E2A47">Garantia incondicional de 7 dias</h3>
+        <p style="margin: 0; color: #4A5A6E">Se em até 7 dias você achar que não valeu, devolvemos 100% do valor. Sem justificativa e independentemente de já ter enviado a redação.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="background: #FFFFFF">
+    <div style="max-width: 880px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 28px">
+      <h2 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.2; color: #0E2A47">Perguntas frequentes</h2>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <details style="border: 1px solid #DCE3EC; border-radius: 12px; padding: 0 22px">
+          <summary style="display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 18px 0; font-weight: 600; color: #0E2A47; min-height: 44px">A professora tem experiência com concursos?<span class="faq-plus" style="font-size: 24px; line-height: 1; transition: transform 0.2s">+</span></summary>
+          <div style="padding: 0 0 20px; color: #4A5A6E; font-size: 16px">A trajetória da Profª Marcela é em redação dissertativa para ENEM e vestibulares, há mais de 17 anos. A base que as bancas avaliam é a mesma: norma-padrão, tema, estrutura, coesão e argumentação. O diagnóstico aplica essa base com os critérios da banca que você escolher. Este é o primeiro lote voltado a concursos, por isso o preço de lançamento.</div>
+        </details>
+        <details style="border: 1px solid #DCE3EC; border-radius: 12px; padding: 0 22px">
+          <summary style="display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 18px 0; font-weight: 600; color: #0E2A47; min-height: 44px">Quais bancas posso escolher?<span class="faq-plus" style="font-size: 24px; line-height: 1; transition: transform 0.2s">+</span></summary>
+          <div style="padding: 0 0 20px; color: #4A5A6E; font-size: 16px">Cebraspe, Vunesp, Cesgranrio ou Idecan. Cada voucher dá direito a uma banca. Se o seu concurso for de outra banca, fale com a gente no WhatsApp antes de comprar.</div>
+        </details>
+        <details style="border: 1px solid #DCE3EC; border-radius: 12px; padding: 0 22px">
+          <summary style="display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 18px 0; font-weight: 600; color: #0E2A47; min-height: 44px">Corrige questão discursiva, estudo de caso ou peça técnica?<span class="faq-plus" style="font-size: 24px; line-height: 1; transition: transform 0.2s">+</span></summary>
+          <div style="padding: 0 0 20px; color: #4A5A6E; font-size: 16px">Não. O diagnóstico é para a redação dissertativa da prova discursiva. Se o seu edital cobra outro formato, consulte a gente antes da compra.</div>
+        </details>
+        <details style="border: 1px solid #DCE3EC; border-radius: 12px; padding: 0 22px">
+          <summary style="display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 18px 0; font-weight: 600; color: #0E2A47; min-height: 44px">Preciso ter um tema?<span class="faq-plus" style="font-size: 24px; line-height: 1; transition: transform 0.2s">+</span></summary>
+          <div style="padding: 0 0 20px; color: #4A5A6E; font-size: 16px">Você pode usar um tema de prova anterior da sua banca ou pedir uma sugestão nossa junto com o voucher.</div>
+        </details>
+        <details style="border: 1px solid #DCE3EC; border-radius: 12px; padding: 0 22px">
+          <summary style="display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 18px 0; font-weight: 600; color: #0E2A47; min-height: 44px">Posso enviar digitada?<span class="faq-plus" style="font-size: 24px; line-height: 1; transition: transform 0.2s">+</span></summary>
+          <div style="padding: 0 0 20px; color: #4A5A6E; font-size: 16px">Pode, por foto ou arquivo. Recomendamos manuscrita, porque é assim que você vai escrever na prova e a letra, a ocupação das linhas e as rasuras também contam.</div>
+        </details>
+        <details style="border: 1px solid #DCE3EC; border-radius: 12px; padding: 0 22px">
+          <summary style="display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 18px 0; font-weight: 600; color: #0E2A47; min-height: 44px">Isso garante minha aprovação?<span class="faq-plus" style="font-size: 24px; line-height: 1; transition: transform 0.2s">+</span></summary>
+          <div style="padding: 0 0 20px; color: #4A5A6E; font-size: 16px">Não, e desconfie de quem promete isso. O diagnóstico mostra com precisão onde você está e o que corrigir primeiro. A evolução depende de você aplicar o plano nas próximas redações.</div>
+        </details>
+        <details style="border: 1px solid #DCE3EC; border-radius: 12px; padding: 0 22px">
+          <summary style="display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 18px 0; font-weight: 600; color: #0E2A47; min-height: 44px">Quanto tempo tenho para usar o voucher?<span class="faq-plus" style="font-size: 24px; line-height: 1; transition: transform 0.2s">+</span></summary>
+          <div style="padding: 0 0 20px; color: #4A5A6E; font-size: 16px">45 dias a partir da compra. A devolutiva chega em até 48 horas depois do envio da redação.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section>
+    <div style="max-width: 880px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center">
+      <h2 style="margin: 0; font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.2; color: #0E2A47">A objetiva você já está estudando. Agora saiba quanto vale a sua redação.</h2>
+      <a href="#oferta" style="font-size: 18px; font-weight: 700; color: #0E2A47; background: {{accent}}; padding: 16px 28px; border-radius: 10px; text-decoration: none; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Quero meu diagnóstico</a>
+      <div style="font-size: 15px; color: #4A5A6E">Dúvidas? <a href="https://wa.me/5514982216454" style="font-weight: 600">Fale com a gente no WhatsApp</a></div>
+    </div>
+  </section>
+
+  <footer style="background: #0E2A47; color: #C5D2E0; font-size: 14px">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between">
+      <div>Texto &amp; Contexto · Diagnóstico Estratégico de Redação para Concursos</div>
+      <div>Pagamento processado pela Hotmart</div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E2A33B","options":["#E2A33B","#F0B95A","#7FC4A6","#9CC3F0"]},"$preview":{"width":1440,"height":9200}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#E2A33B' };
+  }
+}
+</script>
+</body>
+</html>
